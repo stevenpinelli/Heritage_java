@@ -14,7 +14,7 @@ public class Chanteur extends Personne {
 		this.setEdition(maisonEdition);
 	}
 	
-	public static Personne creerChanteur(Scanner scanner){
+	public static Chanteur creerChanteur(Scanner scanner){
 		Chanteur c = null;
 		try{
 			boolean sasieOK = false;
@@ -38,7 +38,7 @@ public class Chanteur extends Personne {
 	}
 	
 	public String sePresenter(){
-		return super.sePresenter() + " et je suis chanteur";
+		return super.sePresenter() + " et je suis chanteur chez ";
 	}
 	
 	public void setEdition(String profession){

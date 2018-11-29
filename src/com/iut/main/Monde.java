@@ -17,12 +17,13 @@ public class Monde {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		/*Personne p1 = Personne.creerPersonne(sc);
-		Personne p2 = Personne.creerPersonne(sc);*/
-		Personne c	= Chanteur.creerChanteur(sc);
+		Personne p1 = Personne.creerPersonne(sc);
+		Personne p2 = Personne.creerPersonne(sc);
+		Chanteur c	= Chanteur.creerChanteur(sc);
 		
-		System.out.println(c.sePresenter());
-	//	System.out.println(p2.sePresenter());
+		System.out.println(p1.sePresenter());
+		System.out.println(p2.sePresenter());
+		System.out.print(c.sePresenter());
 		System.out.println(c.getEdition());
 		
 	}
