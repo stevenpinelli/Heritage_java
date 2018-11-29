@@ -1,10 +1,9 @@
 package com.iut.main;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.iut.chanteur.Chanteur;
-//import com.iut.chanteur.Chanteur;
+
 import com.iut.heritage.Personne;
 
 public class Monde {
@@ -22,9 +21,9 @@ public class Monde {
 		Personne p2 = Personne.creerPersonne(sc);*/
 		Personne c	= Chanteur.creerChanteur(sc);
 		
-	/*	System.out.println(p1.sePresenter());
-		System.out.println(p2.sePresenter());*/
-		System.out.println(c.getNom());
+		System.out.println(c.sePresenter());
+	//	System.out.println(p2.sePresenter());
+		System.out.println(c.getEdition());
 		
 	}
 		

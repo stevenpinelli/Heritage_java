@@ -6,10 +6,12 @@ import com.iut.heritage.Personne;
 
 public class Chanteur extends Personne {
 	
-	private String maisonEdition;
 	
-	public Chanteur(String prenom, String nom, int age){
+	private String maisonEdition;
+
+	public Chanteur(String prenom, String nom, String maisonEdition, int age){
 		super(prenom,nom,"chanteur",age);
+		this.setEdition(maisonEdition);
 	}
 	
 	public static Personne creerChanteur(Scanner scanner){
@@ -26,7 +28,7 @@ public class Chanteur extends Personne {
 				scanner.nextLine();
 				System.out.print("Maison d'edition > ");
 				String maisonEdition = scanner.nextLine();
-				c = new Chanteur(nom,prenom,age);
+				c = new Chanteur(nom,prenom,maisonEdition,age);
 				sasieOK = true;
 			}
 		}catch (Exception ex) {
@@ -39,12 +41,12 @@ public class Chanteur extends Personne {
 		return super.sePresenter() + " et je suis chanteur";
 	}
 	
-	public void setEdition(String nom){
-		
+	public void setEdition(String profession){
+		this.maisonEdition = profession;
 	}
 	
-	public void getEdition(String nom){
-		
+	public String getEdition(){
+		return maisonEdition;
 	}
 
 }
