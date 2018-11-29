@@ -1,5 +1,6 @@
 package com.iut.main;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.iut.chanteur.Chanteur;
@@ -8,9 +9,9 @@ import com.iut.heritage.Personne;
 
 public class Monde {
 	
-/*	public static final String CHOIX_AJOUTER = "1";
+	public static final String CHOIX_AJOUTER = "1";
 	public static final String CHOIX_RECHERCHER = "2";
-	public static final String CHOIX_QUITTER = "3";*/
+	public static final String CHOIX_QUITTER = "3";
 
 
 	public static void main(String[] args) {
